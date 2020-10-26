@@ -56,7 +56,7 @@
  
                       display.append("<h3 style='text-align:center;color:red;'><b>Today stats</b></h3>");
   display.append("<div class='row mt-3'><div class='col-sm-4 col-4'><div class='card bg-dark text-white shadow-sm' style='width: 100%;'><div class='card-body '><h6 class='card-title'>Active</h6><p style='font-size:14px;font-weight:bolder;' class='card-text'>"+result['todayCases']+"</p></div></div></div><div class='col-sm-4 col-4'><div class='card bg-dark text-white shadow-sm' style='width: 100%;'><div class='card-body'><h6 class='card-title'>Death</h6><p style='font-size:14px;font-weight:bolder;' class='card-text'>"+result['todayDeaths']+"</p></div></div></div><div class='col-sm-4 col-4'><div class='card bg-dark text-white shadow-sm' style='width: 100%;'><div class='card-body'><h6 class='card-title'>Recovered</h6><p style='font-size:14px;font-weight:bolder;' class='card-text'>"+result['todayRecovered']+"</p></div></div></div></div>");
-
+display.append("<div class='card mt-3 shadow bg-danger text-white' style='width: 100%;'><div class='card-body'><h5 class='card-title'>Critical Cases</h5><p class='card-text'>"+result['critical']+"</p></div></div>");
 
 					  });
 
