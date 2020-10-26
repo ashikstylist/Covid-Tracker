@@ -47,6 +47,12 @@
 
        $(document).ready( function() {
        var country = document.getElementById('country').value;
+	   if(country == ""){
+         
+         alert("Please Enter a Country name");
+         
+        }
+    else{
        var display = $("#output")
               $.getJSON("https://corona.lmao.ninja/v2/countries/"+country+"" ,function(result){
 			          display.empty();
@@ -60,7 +66,7 @@
                       display.append("<div class='card mt-3 shadow bg-danger text-white' style='width: 100%;'><div class='card-body'><h5 class='card-title'>Critical Cases</h5><p class='card-text'>"+result['critical']+"</p></div></div>");
 
 					  });
-
+        }
 
                   });
       
